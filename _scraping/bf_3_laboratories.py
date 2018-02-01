@@ -1,3 +1,8 @@
+# Autor do ficheiro: André Amândio
+# Nº aluno: 14900
+# UC: Linguagens de Programação 2017/2018
+# Ficheiro: bf_3_laboratories.py
+# Ultima modificação: 01/02/2018
 import requests, json
 from bs4 import BeautifulSoup
 

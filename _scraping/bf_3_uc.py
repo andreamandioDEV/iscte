@@ -1,3 +1,9 @@
+# Autor do ficheiro: André Amândio
+# Nº aluno: 14900
+# UC: Linguagens de Programação 2017/2018
+# Ficheiro: bf_3_uc.py
+# Ultima modificação: 01/02/2018
+# Refs: http://stackabuse.com/reading-and-writing-json-to-a-file-in-python/
 import requests, json
 from bs4 import BeautifulSoup
 
@@ -78,15 +84,12 @@ for uc in uc_tr:
 		'uc_optional': uc_optional
 		})
 
-#http://stackabuse.com/reading-and-writing-json-to-a-file-in-python/
-
 #Message console
 print('Finish scraping.')
 print('Start json file...')
 
 with open('3_ucs.txt', 'w', encoding='utf8') as outfile:  
-    json.dump(data_ucs, outfile)
+	json.dump(data_ucs, outfile)
 
-#ensure_ascii=False
 #Message console
 print('Finish json file.')

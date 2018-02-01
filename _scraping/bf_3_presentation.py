@@ -1,3 +1,8 @@
+# Autor do ficheiro: André Amândio
+# Nº aluno: 14900
+# UC: Linguagens de Programação 2017/2018
+# Ficheiro: bf_3_presentation.py
+# Ultima modificação: 01/02/2018
 import requests, json
 from bs4 import BeautifulSoup
 
@@ -22,13 +27,6 @@ mainText = content.find('div', attrs={'class':'top-buffer-10'}).find('p').getTex
 videoLink = content.find('iframe', attrs={'class':'degree-video'})['src']
 directorMessage = content.find('div', attrs={'class':'quote'}).find('p').getText()
 
-
-#print(content)
-#print(subtitle)
-#print(mainText)
-#print(videoLink)
-#print(directorMessage)
-
 data_presentation['presentation'].append({
 		'subtitle': restore_name(subtitle),
 		'mainText': restore_name(mainText),
@@ -40,7 +38,7 @@ data_presentation['presentation'].append({
 print('Finish scraping.')
 print('Start json file...')
 with open('3_presentation.txt', 'w', encoding='utf8') as outfile:  
-    json.dump(data_presentation, outfile)
-#ensure_ascii=False
+	json.dump(data_presentation, outfile)
+
 #Message console
 print('Finish json file.')

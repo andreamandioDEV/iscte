@@ -1,12 +1,21 @@
+# Autor do ficheiro: André Amândio
+# Nº aluno: 14900
+# UC: Linguagens de Programação 2017/2018
+# Ficheiro: managementController.py
+# Ultima modificação: 01/02/2018
 from _model.myModel import *
 from _model.myPlot import *
 import json
 
+# classe Management
+# 	- Backoffice da aplicação
 class Management():
 
 	def __init__(self):
 		pass
 
+	# Função que executa ações de acordo a ação:
+	# @param action -> ação
 	def db_action(action):
 		if(action == 'load'):
 			Management.__drop_all()
@@ -23,6 +32,7 @@ class Management():
 		else:
 			return "Ocorreu um erro de ação..."
 
+	# Função que apaga todos os dados da base de dados
 	def __drop_all():
 		try:
 			db.session.query(Uc).delete()
@@ -36,7 +46,7 @@ class Management():
 		except Exception as e:
 			return "Erro on drop: "+e
 		
-
+	# Função que carrega todos os dados para a base de dados
 	def __load_all():
 		try:
 			course_id="3"
@@ -74,7 +84,7 @@ class Management():
 		except Exception as e:
 			return "Erro on load: "+e
 		
-
+	# Função que cria os gráficos etcs/ucs
 	def __etcsUc():
 		Y = []
 		X = []
@@ -85,6 +95,7 @@ class Management():
 		MyPlot.bar_graph(X, Y, 'etcs_uc', 'Nº de Ucs por ETCs', 'Nº ETCs', 'Nº UCs', X)
 		MyPlot.linear_graph(X, Y, 'etcs_uc', 'Nº de UCs por ETCs', 'Nº ETCs', 'Nº UCs', X)
 
+	# Função que cria os gráficos publicações/ano
 	def __publicationYear():
 		Y = []
 		X = []
@@ -95,7 +106,7 @@ class Management():
 		MyPlot.bar_graph(X, Y, 'publications_year', 'Nº de Publicações por Ano', 'Anos', 'Nº Publicações', X ,'vertical')
 		MyPlot.linear_graph(X, Y, 'publications_year', 'Nº de Publicações por Ano', 'Anos', 'Nº Publicações', X ,'vertical')
 
-
+	# Função que cria os gráficos docente/tipo de curso
 	def __teachersCourseType():
 		Y = []
 		X = []
@@ -106,6 +117,5 @@ class Management():
 			Y.append(y)
 			X.append(c.id_course_type)
 			XLabels.append(c.name)
-
 		MyPlot.bar_graph(X, Y, 'teacher_ct', 'Nº de Professores por Graduação', 'Graduação', 'Nº Professores', XLabels)
 		MyPlot.linear_graph(X,Y, 'teacher_ct', 'Nº de Professores por Graduação', 'Graduação', 'Nº Professores', XLabels)

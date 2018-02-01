@@ -1,3 +1,8 @@
+# Autor do ficheiro: André Amândio
+# Nº aluno: 14900
+# UC: Linguagens de Programação 2017/2018
+# Ficheiro: bf_3_teacher.py
+# Ultima modificação: 01/02/2018
 import requests, json, time
 from bs4 import BeautifulSoup
 from bot_publications import *
@@ -26,7 +31,6 @@ teaching = "/teaching"
 publications = "/publications"
 other = "/other"
 mainteacher = "https://www.iscte-iul.pt/curso/3/licenciatura-engenharia-informatica/docentes"
-
 
 data_teacher = {}
 data_teacher['teacher'] = []
@@ -153,46 +157,12 @@ for t in teachers:
 		print('FAIL: teaching')
 		pass
 
-
 	#Page: Publications	
 	try:
 		pub_content = PubScrap.scrap(url+publications, id_teacher,data_teacher['publications'])
 	except:
 		print('FAIL: publications')
 		pass
-
-
-	#if (id_teacher == 7):
-	#	break
-
-
-
-'''print(data_teacher['teacher'])
-print(data_teacher['uc'])
-print(data_teacher['academic'])
-print(pub_content['publications'])
-'''
-
-
-
-
-#prints
-'''print('\n\n------------------------------------------')
-print(mainUrl+restore_name(photo_url))
-print(restore_name(name))
-print(restore_name(affiliation_type))
-print(restore_name(affiliation_unit))
-print(mainUrl+restore_name(affiliation_unit_url))
-print(restore_name(phone))
-print(restore_name(cabinet))
-print(restore_name(locker))
-print(restore_name(cv_resume))
-print('\n------------------------------------------')
-print(data_teacher['academic'])
-print('\n------------------------------------------')
-print(data_teacher['uc'])
-print('------------------------------------------')'''
-
 
 
 #Message console
@@ -203,3 +173,6 @@ print('Scraping time: '+str(((time_end - time_start)/60))+ ' minutos.')
 print('Start json file...')
 with open('3_teachers.json', 'w', encoding='utf8') as outfile:  
 	json.dump(data_teacher, outfile)
+
+#Message console
+print('Finish json file.')

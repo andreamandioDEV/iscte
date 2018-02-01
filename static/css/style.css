@@ -51,6 +51,11 @@ p {
 .table-responsive {
     padding-right: 20px !important;
     padding-left: 20px !important;
+    width: 100% !important;
+}
+
+#pub-table {
+    width: 100% !important;
 }
 
 .table td{
