@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% from "/_macros/custom_macros.html" import tbody_ucs with context %}
+{% from "/_macros/custom_macros.html" import parallax with context %}
+
+{% block title %}Plano de estudos{% endblock %}
+{% block content_page %}
+
+    {{ parallax('parallax-study','Plano de Estudos','A licenciatura em Engenharia e Informática tem a duração de três anos, correspondentes à obtenção 180 créditos ECTS, repartidos entre 174 em unidades curriculares obrigatórias e 6 em optativas em Competências Transversais.')}}
+
+	<div class="container">
+        <br>
+        <h2 class="text-center"><b>Unidades Curriculares</b></h2>
+        <br>
+        <div>
+            <form class="form-inline" method="POST" action="{{ url_for('plano_estudos') }}">
+                  {{ form.hidden_tag() }}
+                  <div class="form-group">
+                    {{ wtf.form_field(form.mysearch) }}
+                  </div>
+                  <button class="btn btn-primary" type="submit">Filtrar</button>
+            </form>
+        </div>
+        <br>
+        {% include "_study-plancomponents/_uc-table.html" %}
+    </div>
+    
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+{% endblock %}

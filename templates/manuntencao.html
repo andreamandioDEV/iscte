@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% from "/_macros/custom_macros.html" import parallax with context %}
+
+{% block title %}Manuntenção{% endblock %}
+
+{% block content_page %}
+
+  {{ parallax('parallax-db','Manuntenção','Insira e apague os dados da base de dados e gere os gráficos estatísticos.')}}
+
+  <div class="container text-center">
+    <form class="form-inline" method="POST" action="{{ url_for('manuntencao') }}">
+      <h2 class="form-signin-heading">Base de dados</h2>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit" name="submit" value="load">Inserir dados</button>
+        <button class="btn btn-danger" type="submit" name="submit" value="drop">Apagar dados</button>
+      </div>
+      <br>
+      <h2 class="form-signin-heading">Gráficos</h2>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit" name="submit" value="graph">Gerar gráficos</button>
+      </div>
+    </form>
+    <br><br>
+    <h2>{{ error }}</h2>
+  </div>
+{% endblock %}

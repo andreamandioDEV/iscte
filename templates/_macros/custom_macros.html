@@ -1,0 +1,72 @@
+<!-- https://stackoverflow.com/questions/19002290/how-to-use-macros-in-a-included-file -->
+{% macro tbody_ucs(title, ucs) -%}
+	<tr class="year-semester">
+        <td>{{ title }}</td><td></td><td></td><td></td>
+    </tr>
+    {% for uc in ucs %}
+        {% if _filter in uc.goals or _filter in uc.program or _filter in uc.evaluation_process %}
+        	<tr>
+        		<td>{{ uc.name }}</td>
+        		<td>{{ uc.id_language |get_language_name }}</td>
+        		<td>{{ uc.etcs }}</td>
+                <td id="uc-show-details"><i id="{{ uc.id_uc }}" class="fa fa-arrow-down clickable" aria-hidden="true" onclick=""></i></td>
+        	</tr>
+            <tr id="uc-details-{{ uc.id_uc }}">
+                <td>
+                    <b>Objetivos</b><br> {{ uc.goals }}
+                    <br><b>Programa</b><br> {{ uc.program }}
+                    <br><b>Processo de avaliação</b><br> {{ uc.evaluation_process }}
+                </td>
+                <td></td><td></td><td></td>
+            </tr>
+        {% endif %}
+	{% endfor %}
+{%- endmacro %}
+
+{% macro parallax(img_class, title, span) -%}
+    <div class="parallax h500 {{ img_class }}">
+        <div class="container text-center">
+            <h1 class="white">{{ title}}</h1>
+            <span id="parallax-span" class="white">{{ span }}</span>
+        </div>
+    </div>
+{%- endmacro %}
+
+{% macro teacher_departments(affiliations) -%}
+    <div class="affiliation-content">
+    {% for aff in affiliations %}
+        <span><a href="{{aff.unit_url}}">{{aff.unit}}</a></span>
+        <br>
+    {% endfor %}
+    </div>
+{%- endmacro %}
+
+{% macro teacher_affiliation(affiliations) -%}
+    <div class="affiliation-content">
+    {% for aff in affiliations %}
+        <span><b>{{aff.type}}</b></span>
+        <span><a href="{{aff.unit_url}}">{{aff.unit}}</a></span>
+        <br>
+    {% endfor %}
+    </div>
+{%- endmacro %}
+
+{% macro graph_container(title, text1, text2, text2b, counter, id, img_name)  -%}
+<br><br>
+<div class="row white-form">
+  <div class="col-md-5">
+    <h2 class="text-center">{{ title }}</h2>
+    <br>
+    <p class="text-justify">{{ text1 }}</p>
+    <p class="text-justify">{{ text2 }}<b>{{ counter }}</b>{{ text2b }}</p>
+  </div>
+  <br>
+  <div class="col-md-6 text-center">
+    <div class="text-right">
+      <i id="{{ id }}-line-chart" class="fa fa-line-chart clickable graph-btn" aria-hidden="true" onclick=""></i><i id="{{ id }}-bar-chart" class="fa fa-bar-chart clickable graph-btn active" aria-hidden="true" onclick=""></i>
+    </div>
+    <br>
+    <img id="{{ id }}-img" src="static/images/plot/{{ img_name }}_bar.png" class="graph-img" alt="{{ img_name }}">
+  </div>
+</div>
+{%- endmacro %}

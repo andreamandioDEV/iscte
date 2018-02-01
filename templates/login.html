@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% from "/_macros/custom_macros.html" import parallax with context %}
+
+{% block title %}Login{% endblock %}
+
+{% block content_page %}
+  {{ parallax('parallax-login','Iniciar sessão','Área restrita para manuntenção!')}}
+  <div class="container">
+    <br>
+    <br>
+    <form class="form-signin" method="POST" action="{{ url_for('login') }}">
+      {{ form.hidden_tag() }}
+      {{ wtf.form_field(form.email) }}
+      {{ wtf.form_field(form.password) }}
+      <p class="red"> {{ error }}</p>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+    </form>
+  </div>
+{% endblock %}

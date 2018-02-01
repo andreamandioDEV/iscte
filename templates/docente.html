@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% from "/_macros/custom_macros.html" import teacher_affiliation with context %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.dataTables.min.css') }}">
+{% endblock %}
+
+{% block title %}{{ teacher.name }}{% endblock %}
+{% block content_page %}
+
+	<div class="container">
+        <br>
+        <div class="white-form">
+	        <h2 class="margin-20"><b>Informações do docente</b></h2>
+	        <br>
+	        <div class="row margin-20">
+	        	<div class="col-md-2 text-center vcenter">
+	        		<img src="{{ teacher.photo_url }}" class="img-thumbnail" alt="{{ teacher.name }}">
+	        	</div>
+                <vr>
+	        	<div class="col-md-6 border-right border-left">
+	        		<h2 class="text-left iscte-color"><b>{{ teacher.name }}</b></h2>
+	                {{ teacher_affiliation(teacher.id_teacher | get_affiliation)}}
+	        	</div>
+                <vr>
+	        	<div class="col-md-4 vcenter">
+	        		<span><b>Telef:</b> {{ teacher.phone }}</span>
+	        	</div>	
+	        </div>
+    	</div>
+    	<br>
+        
+        {% include "_teachercomponents/_resume.html" %}
+
+        {% include "_teachercomponents/_academic-table.html" %}
+
+        {% include "_teachercomponents/_uc-table.html" %}
+
+        {% include "_teachercomponents/_publication-table.html" %}
+        
+
+    </div>
+    
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery.dataTables.min.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $('#pub-table').DataTable().order([ 0, 'desc' ]).draw();
+        } );
+    </script>
+{% endblock %}

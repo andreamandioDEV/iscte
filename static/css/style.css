@@ -1,0 +1,430 @@
+@font-face {
+  font-family: 'iul_font_bold';
+  src: url('../font/morgansansbold-webfont.woff');
+}
+
+@font-face {
+  font-family: 'iul_font';
+  src: url('../font/morgansans-webfont.woff');
+}
+
+@font-face {
+  font-family: 'iul_font_oblique';
+  src: url('../font/morgavoblique-webfont.woff');
+}
+
+
+body {
+    font-family: iul_font;
+    background-color: whitesmoke;
+}
+
+h1, b, strong {
+    font-family: iul_font_bold;
+}
+
+h1{
+	font-size: 40px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+span{
+	font-size: 15px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.quote {
+    font-family: iul_font_oblique;
+    font-size: 13px;
+}
+
+.table {
+    background-color: white !important;
+}
+
+.table-responsive {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+
+.table td{
+    vertical-align: middle !important;
+}
+
+.table thead {
+    background: #0079BC !important; 
+    color: white;
+    font-weight: bold;
+}
+
+.break{
+    height: 5px;
+}
+
+.iscte-color{
+    color:#0079BC;
+}
+
+.iscte-bk-color{
+    background-color: #0079BC;
+}
+
+.red {
+	color: red
+}
+
+.white{
+	color: white;
+}
+
+.black{
+	color: black;
+}
+
+
+.selected-color {
+	color: #173D52;
+}
+
+.white-form {
+    background-color: white;
+    border-radius: 2px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.year-semester{
+    background-color: lightsteelblue;
+    color: white;
+    font-weight: bold;
+}
+
+.uc-type{
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+}
+
+.clickable {
+    cursor:pointer;
+}
+
+.work-list ul li{
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.white-smoke-bk {
+    background-color:whitesmoke !important;
+}
+
+.teacher-table-name{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.img-thumbnail {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+    border-radius: 5em;
+}
+
+
+.margin-20{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.affiliation-content {
+    min-height: 70px;
+    max-height: 100px;
+    overflow: auto;
+    padding-bottom: 40px;
+}
+
+.content-resume{
+    padding: 20px;
+}
+
+.vcenter {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  display: flex;
+  align-items: center;
+
+}
+
+.border-right {
+    border-right: 1px solid #e0ecf0;
+}
+
+.border-left {
+    border-left: 1px solid #e0ecf0;
+}
+
+.border-bottom {
+    padding-bottom: 3px;
+    border-bottom: 1px solid #e0ecf0
+}
+
+.initiallyHidden { display: none; }
+
+.paginate_button.current{
+    color: white !important;
+}
+
+.graph-img {
+    max-width:100%;
+    max-height: 350px;
+}
+
+.graph-btn {
+    background-color: #0079BC;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin: 2px;
+    margin-bottom: 5px;
+    border-color: whitesmoke;
+    border: 2px;
+    border: solid;
+}
+
+.graph-btn.active {
+    font-weight: bold;
+    color: #0079BC;
+    background-color: whitesmoke;
+    border-color: #0079BC;
+    border: 2px;
+    border: solid;
+}
+
+.graph-btn:hover {
+    background-color: #0079BC;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    margin: 2px;
+    margin-bottom: 5px;
+    border-color: whitesmoke;
+    border: 2px;
+    border: solid;
+}
+}
+
+/* PARALLAX ------------------------------------------------------- */
+
+.parallax { 
+    /* Set a specific height */
+    
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax.h500 {
+	height: 500px; 
+}
+
+.parallax-code {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/code.png");
+    background-size: cover;
+	/*opacity: 0.2;
+    filter: alpha(opacity=20); 
+    -webkit-filter: blur(4px);filter: blur(4px);*/
+}
+
+.parallax-study {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/study-plan.png");
+    background-size: cover;
+}
+
+.parallax-login {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/login.png");
+    background-size: cover;
+}
+
+.parallax-db {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/db.png");
+    background-size: cover;
+}
+
+.parallax-work {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/work.png");
+    background-size: cover;
+}
+
+.parallax-teacher {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/teacher.png");
+    background-size: cover;
+}
+
+.parallax-statistics {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/statistics.png");
+    background-size: cover;
+}
+
+.parallax-laboratories {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/labs.png");
+    background-size: cover;
+}
+
+.parallax.h500 h1{
+	padding-top: 140px;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.parallax.h500 span{
+	font-size: 20px;
+}
+
+#parallax-span{ display: block; } 
+
+.margin-left {
+    margin-left: 
+}
+
+/* -------------------------------------------------------  PARALLAX */
+
+
+/* MEDIAS ------------------------------------------------------- */
+
+@media screen and  (max-width:1199px) and (min-width:992px){
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 17px;
+}
+
+span{
+    font-size: 15px;
+}
+
+p {
+    font-size: 15px;
+}
+
+
+.parallax.h500 {
+    height: 300px; 
+}
+
+.parallax.h500 h1{
+    padding-top: 80px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.parallax.h500 span{
+    font-size: 15px;
+}   
+
+#parallax-span{ display: block; } 
+
+}
+
+
+@media screen and (max-width: 991px){
+
+h1{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 14px;
+}
+
+span{
+    font-size: 12px;
+}
+
+p {
+    font-size: 12px;
+}
+
+table td {
+    font-size: 12px;
+}
+
+.parallax.h500 {
+    height: 200px; 
+    margin-top: 20px;
+}  
+
+.parallax.h500 h1{
+    padding-top: 60px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.parallax.h500 span{
+    font-size: 10px;
+}   
+
+.img-thumbnail {
+    max-width: 60% !important;
+    padding: 1px !important;
+}
+
+#parallax-span{ display: none; } 
+
+.table-responsive {
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+
+}
+
+/* -------------------------------------------------------  MEDIAS */

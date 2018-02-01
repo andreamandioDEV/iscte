@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% from "/_macros/custom_macros.html" import parallax with context %}
+{% from "/_macros/custom_macros.html" import teacher_departments with context %}
+
+{% block title %}Docentes{% endblock %}
+{% block content_page %}
+
+    {{ parallax('parallax-teacher','Docentes','A lecionação é assegurada por um corpo docente, altamente qualificado, doutorado pelas melhores universidades portuguesas e estrangeiras e com permanente ligação, não apenas à investigação científica de topo a nível mundial, mas também à atividade empresarial. O contexto privilegiado do ISCTE-IUL na área da gestão assegura uma formação diferenciada que contempla também as componentes financeira e económica das organizações, potenciando a formação de profissionais de alta qualidade, habilitados a trabalhar como quadros técnicos de topo.')}}
+
+	<div class="container">
+        <br>
+        <br>
+        <table class="table">
+            <tbody>
+                {% for teacher in teachers %}
+                    <tr>
+                        <td class="text-center"><img src="{{ teacher.photo_url }}" class="img-thumbnail" alt="{{ teacher.name }}"></td>
+                        <td>
+                            <span class="teacher-table-name"><a href="docente/{{ teacher.id_teacher }}">{{ teacher.name }}</a></span>
+                            <br>
+                            {{ teacher_departments(teacher.id_teacher | get_affiliation)}}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+{% endblock %}

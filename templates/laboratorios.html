@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% from "/_macros/custom_macros.html" import parallax with context %}
+
+{% block title %}Laboratórios{% endblock %}
+{% block content_page %}
+
+    {{ parallax('parallax-laboratories','Laboratórios','Existem 6 laboratórios no ISCTE-IUL que apoiam as atividades de investigação e de ensino: o Laboratório de Ciências da Comunicação; o Laboratório de Culturas Visuais e Digitais; o Laboratório de Informática; o Laboratório de Psicologia Social e das Organizações; o Laboratório de Telecomunicações; e o VITRUVIUS FabLab.')}}
+
+	<div class="container">
+        <br>
+        <br>
+        {% for lab in labs %}
+            <div class="white-form">
+                <h2 class="text-left iscte-color margin-20"><b>{{ lab.title }}</b></h2>
+                <p class="margin-20">{{ lab.info }}</p>
+                {% if lab.ul != '' %}
+                    <p class="margin-20">{{ lab.list }}<p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    
+{% endblock %}

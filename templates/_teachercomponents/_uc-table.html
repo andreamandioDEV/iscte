@@ -1,0 +1,21 @@
+<div class="white-form">
+    <h2 class="margin-20 iscte-color border-bottom"><b>Unidades Curriculares Lecionadas (no ano lectivo corrente 2017/2018) <i id="uc-arrow" class="fa fa-arrow-down clickable" aria-hidden="true" onclick=""></i></b></h2>
+    <div id="uc" class="content-uc initiallyHidden table-responsive">
+        <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Nome da Unidade Curricular</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for uc in ucs %}
+                    <tr>
+                        <td><a href="{{ uc.url }}" class="iscte-color">{{ uc.name }}</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+<br>

@@ -1,0 +1,25 @@
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Nome</td><td>Linguagem</td><td>ETCS</td><td></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="uc-type"><td>Unidades curriculares obrigatórias</td><td></td><td></td><td></td></tr>
+        	{{ tbody_ucs('1º Ano - 1º Semestre', ucs[0] )}}
+        	{{ tbody_ucs('1º Ano - 2º Semestre', ucs[1])}}
+        	{{ tbody_ucs('2º Ano - 1º Semestre', ucs[2])}}
+        	{{ tbody_ucs('2º Ano - 2º Semestre', ucs[3])}}
+        	{{ tbody_ucs('3º Ano - 1º Semestre', ucs[4])}}
+        	{{ tbody_ucs('3º Ano - 2º Semestre', ucs[5])}}
+            <tr class="uc-type"><td>Unidades curriculares optativas</td><td></td><td></td><td></td></tr>
+            <tr class="uc-type"><td>Competências transversais</td><td></td><td></td><td></td></tr>
+            <tr class="year-semester"><td>Obrigatórias</td><td></td><td></td><td></td></tr>
+            {{ tbody_ucs('1º Ano - 2º Semestre', ucs[6])}}
+            <tr class="year-semester"><td>Facultativas</td><td></td><td></td><td></td></tr>
+            {{ tbody_ucs('1º Ano - 2º Semestre', ucs[7])}}
+        </tbody>
+
+    </table>
+</div>

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% from "/_macros/custom_macros.html" import parallax with context %}
+
+{% block title %}Apresentação{% endblock %}
+
+{% block content_page %}
+
+    {{ parallax('parallax-code','Engenharia Informática','A Licenciatura em Engenharia Informática forma engenheiros capazes de responder às atuais exigências da Sociedade de Informação, e dota-os de capacidades para antecipar e responder aos seus novos desafios. O teu futuro começa aqui e agora.')}}
+
+    <div class="container">
+        <br>
+    	<h1 class="text-center black"><b>Sobre a Licenciatura</b></h1>
+    	<br>
+    	<span>A Licenciatura oferece uma formação de base em domínios científicos gerais na área científica da Engenharia Informática. Os licenciados adquirem uma formação sólida que os habilita a fazer face a um ambiente profissional competitivo e dinâmico. A formação assenta numa forte componente teórica e experimental que garante as capacidades para lidar com os desafios da Engenharia Informática, e em simultâneo responder aos desafios da gestão empresarial. A Licenciatura em Engenharia Informática destina-se a todos os jovens que tenham particular interesse pela informática e que gostem de desafios constantes, de modo a acompanharem todas as evoluções inerentes à Engenharia Informática. Após a conclusão da Licenciatura em Engenharia Informática, os seus licenciados terão ao seu dispor uma multitude de oportunidades de emprego e uma elevada taxa de empregabilidade. Se, paralelamente, decidirem continuar a sua formação poderão ingressar num curso de 2º ciclo, como o Mestrado em Engenharia Informática (MEI), detentor da Marca de Qualidade EUR-ACE conferida pela European Network for Accreditation of Engineering Education (ENAEE).</span>
+        <br><br>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <br>
+                <h2 class="text-center"><b>Mensagem dos diretores</b></h2>
+                <br>
+                <span>A LEI diferencia-se face à oferta similar das outras universidades pelo facto de incluir uma forte componente de unidades curriculares da área científica da informática, e ainda todas as unidades curriculares específicas a uma licenciatura em Engenharia. Desta forma, os licenciados da LEI desempenharão de forma competente e capaz todos os desafios do mundo empresarial. Adicionalmente, os alunos da LEI terão ainda oportunidade de frequentar unidades curriculares nas áreas das ciências sociais e humanas, o que lhes providenciará a oportunidade de desenvolver as suas capacidades interpessoais e humanas.</span>
+            </div>
+            <br>
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe src="https://www.youtube.com/embed/bN0lqRHCXMg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    {% include "_indexcomponents/_study_table.html" %}
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    
+{% endblock %}
+

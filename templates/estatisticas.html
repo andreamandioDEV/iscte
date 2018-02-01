@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% from "/_macros/custom_macros.html" import parallax with context %}
+{% from "/_macros/custom_macros.html" import graph_container with context %}
+
+{% block title %}Estatísticas{% endblock %}
+
+{% block content_page %}
+
+  {{ parallax('parallax-statistics','Estatísticas','Dados estatísticos a partir da base de dados criada.')}}
+
+  <div class="container">
+    {{ graph_container('Contagem de UCs por ETCs', 'O gráfico da figura ao lado representa o número de Unidades Curriculares que valem X créditos.', 'O nº de UCs contadas na Licenciatura de Engenharia Informática são ', ' entre ucs opcionais e obrigatórias. A grande quantidade de ucs que têm 2 etcs são opcionais.', n_ucs, 'etcs-ucs', 'etcs_uc') }}
+
+    {{ graph_container('Contagem de Publicações por Ano', 'O gráfico da figura ao lado representa o nº de Publicações em cada Ano.', 'O nº de publicações tem em conta todos os docentes que já lecionaram no cruso da Licenciatura de Engenaria Informática ao longo dos anos, em que no total foram ', ' publicações, entre vários artigos e participações que podem ser consultados no perfil de cada docente.', n_pub, 'pub-year', 'publications_year') }}
+
+    {{ graph_container('Contagem de Graduações académicas dos Docentes', 'O gráfico da figura ao lado representa o nº de docentes por graduações académcias X.', 'Até agora já lecionaram no cruso da Licenciatura de Engenaria Informática ', ' docentes, pode consultar todas as infromações individuais na página de docentes,', n_teacher, 'teacher-ct', 'teacher_ct') }}
+  </div>
+{% endblock %}

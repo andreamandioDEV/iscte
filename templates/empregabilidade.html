@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% from "/_macros/custom_macros.html" import parallax with context %}
+
+{% block title %}Empregabilidade{% endblock %}
+{% block content_page %}
+
+    {{ parallax('parallax-work','Empregabilidade','O atual contexto europeu impõe grandes exigências e necessidades a nível tecnológico, onde os Engenheiros Informáticos desempenham um papel crucial.')}}
+
+	<div class="container work-list">
+        <br>
+        <p>O importante crescimento na área dos serviços (por exemplo, banca, seguros, turismo, empresas prestadoras de serviços de tecnologias de informação) e a necessidade premente da reestruturação da Administração Pública e Indústria tornam evidente a escassez de recursos humanos qualificados nesta área. A formação geral da Licenciatura oferece ao aluno as competências técnicas e científicas para desempenhar funções em qualquer área da Engenharia Informática, por exemplo:</p>
+        <ul>
+            <li><i class="fa fa-arrow-right" aria-hidden="true"></i></i>Integrar equipas de desenvolvimento de sistemas informáticos complexos, por exemplo nas áreas da banca, seguros, administração central, multinacionais, etc.;</li>
+            <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Especificar, conceber e desenvolver sistemas de informação adequados aos objectivos e necessidades das empresas e à sua cultura organizacional;</li>
+            <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Conceber, desenvolver e manter redes de computadores;</li>
+            <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Gerir e organizar o conhecimento de uma empresa em diversos formatos e conteúdos, bem como modelar e desenvolver conteúdo multimédia.</li>
+        </ul>
+        <br>
+        <span><a href="static/files/ENG_INF_Licenciados_2014_2015.pdf" target="_blank">Resultados do inquérito de empregabilidade 1 ano após o curso</a></span>
+        <br>
+        <hr>
+        {% include "_empregabilitycomponents/_testimony.html" %}    
+    </div>
+    
+{% endblock %}

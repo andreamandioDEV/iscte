@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'iul_font_bold';
+  src: url('../font/morgansansbold-webfont.woff');
+}
+
+@font-face {
+  font-family: 'iul_font';
+  src: url('../font/morgansans-webfont.woff');
+}
+
+.navbar-container {
+	background-color: #FFFFFF;
+}
+
+body {
+    margin-top: 125px;
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+.navbar-brand img{height:150%;}
+
+.navbar-brand{
+	line-height: 100px;
+    height: 100px;
+	padding-top: 35px;
+}
+.navbar-nav li a {
+	font-family: 'iul_font';
+    line-height: 100px;
+    height: 100px;
+    padding-top: 0;
+}
+
+.navbar-nav li span {
+	font-family: 'iul_font';
+    line-height: 100px;
+    height: 100px;
+	padding-top: 0;
+	font-size: 15px;
+	padding-left: 70px;
+}
+
+.init-session {
+    line-height: 100px !important;
+    height: 100px !important;
+	padding-top: 0 !important;
+	font-size: 15px !important;
+	padding-left: 70px !important;
+	color: #0079BC !important;
+}
+
+.a-active{
+	font-family: 'iul_font_bold';
+	background-color: #0079BC;
+	color: white !important;
+	font-weight: bold;
+	box-shadow: inset 0 0 0 4px whitesmoke;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	background-color: #0079BC;
+	color: rgb(255, 255, 255);
+}
+
+.init-session:hover{
+	background-color: transparent !important;
+	color: #173D52 !important;
+}
+
+@media screen and  (max-width:1199px) and (min-width:992px){
+	.navbar-brand img{height:260%;}
+
+	body {
+    	margin-top: 50px;
+	}
+
+	.navbar-brand{
+		margin-top: 10px;
+		line-height: 30px;
+	    height: 30px;
+		padding-top: 7px;
+	}
+	.navbar-nav li a {
+	    line-height: 30px;
+	    height: 30px;
+	    padding-top: 0;
+	}
+
+	.navbar-nav li span {
+		line-height: 30px;
+	    height: 30px;
+	    padding-top: 0;
+		font-size: 10px;
+		padding-left: 20px;
+	}
+
+	#banner {
+		padding-top: 50px;
+	}
+
+	.init-session {
+	    line-height: 30px !important;
+	    height: 30px !important;
+		padding-top: 0 !important;
+		font-size: 10px !important;
+		padding-left: 20px !important;
+		color: #0079BC !important;
+	}
+}
+
+
+@media screen and (max-width: 991px){
+    .navbar-brand img{height:120%;}
+
+	body {
+    	margin-top: 50px;
+	}
+
+	.navbar-brand{
+		line-height: 70px;
+	    height: 70px;
+		padding-top: 10px;
+		margin-top: 5px;
+		padding-bottom: 25px;
+	}
+	.navbar-nav li a {
+	    line-height: 50px;
+	    height: 50px;
+	    font-size: 9px;
+	    padding-top: 0;
+	    padding-right: 5px;
+    	padding-left: 5px;
+	}
+
+	.navbar-nav li span {
+		line-height: 50px;
+	    height: 50px;
+	    padding-top: 0;
+		font-size: 9px;
+	}
+
+	.init-session {
+	    line-height: 50px !important;
+	    height: 50px !important;
+		padding-top: 0 !important;
+		font-size: 8px !important;
+		color: #0079BC !important;
+	}
+
+	#banner {
+		padding-top: 50px;
+	}
+}
+
