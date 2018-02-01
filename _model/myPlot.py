@@ -1,3 +1,5 @@
+import matplotlib
+matplotlib.use('agg')
 import matplotlib.pyplot as plt
 #Refs: https://www.pythonanywhere.com/forums/topic/5017/
 #	   https://plot.ly/matplotlib/bar-charts/
