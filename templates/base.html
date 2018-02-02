@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Esta página é uma especie de um clone da página de Engenharia informática do ISCTE. Este projeto foi criado no âmbito da unidade curricular Linguagens de Programação como forma de avaliação. Não irá ser publicada. Todos os direitos do coteúdo pertencem ao ISCTE.">
+    <meta name="description" content="Esta página é uma réplica da página de Engenharia informática do ISCTE. Este projeto foi criado no âmbito da unidade curricular Linguagens de Programação como forma de avaliação. Todos os direitos do coteúdo pertencem ao ISCTE.">
     <meta name="author" content="André Amândio">
     <title>
         {% block title %} 
@@ -12,7 +12,6 @@
     </title>
     {% block styles %}
         {{ super() }}
-        <!-- Font Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nav.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">

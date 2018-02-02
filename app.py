@@ -118,7 +118,7 @@ def login():
 			if user.password == form.password.data:
 				user = User.load_user(user._id)
 				login_user(user)
-				return redirect(url_for('manuntencao', user=user))
+				return redirect(url_for('manutencao', user=user))
 			else:
 				return render_template('login.html', form=form, error="O email ou password incorretos.")      
 		return render_template('login.html', form=form, error="O utilizador com o email "+form.email.data+" não existe.")
@@ -138,13 +138,13 @@ def page_not_found(e):
 	return render_template('404.html')
 
 # Página de manuntenção/backoffice
-@app.route('/manuntencao', methods=['GET', 'POST'])
+@app.route('/manutencao', methods=['GET', 'POST'])
 @login_required
-def manuntencao():
+def manutencao():
 	error = ""
 	if request.method == 'POST':
 		action = request.form['submit'] 
 		error = Management.db_action(action)
-		return render_template('manuntencao.html', user=current_user, error=error)
+		return render_template('manutencao.html', user=current_user, error=error)
 	elif request.method == 'GET':
-		return render_template('manuntencao.html', user=current_user, error=error)
+		return render_template('manutencao.html', user=current_user, error=error)
