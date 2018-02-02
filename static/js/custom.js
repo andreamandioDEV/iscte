@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
-    //Hide all uc details on table
+    //Todas as ucs do plano de estudos começam escondidads
     $("[id*='uc-details-']").css('display', 'none');  
 
-    // Arrow on table of study-plan configuration
+    //Mostra os detalhes da uc após o clique na seta e muda a orientação da seta
     if (location.pathname.substring(1) == "plano-estudos"){
         $("i.clickable").click(function(element){  
             id = element.target.id;
@@ -39,6 +39,10 @@ $(document).ready(function(){
 
 });
 
+/*
+Função para a página do docentes
+para slowDown slowUp do conteúdo
+*/
 function sliderToggle(arrow, content){
     $("#"+arrow).click(function(element){ 
         $("#"+content).slideToggle("slow"); 
@@ -50,6 +54,10 @@ function sliderToggle(arrow, content){
     });
 }
 
+/*
+Função para a página das estatísticas
+para trocar gráficos após o clique
+*/
 function graphManagement(mainName,element,imageName){
     id = element.target.id;
     image = document.getElementById(mainName+"-img")

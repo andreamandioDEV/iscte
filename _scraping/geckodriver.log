@@ -5413,3 +5413,125 @@ Unable to read VR Path Registry from C:\Users\André Amândio\AppData\Local\open
 1516723601614	Marionette	DEBUG	Received DOM event "unload" for "https://ciencia.iscte-iul.pt/authors/vitor-manuel-januario-lopes-pegas/publications"
 1516723601809	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://ciencia.iscte-iul.pt/authors/vitor-manuel-januario-lopes-pegas/publications?view_mode=classic_view&redirect=false"
 1516723601866	Marionette	DEBUG	Received DOM event "pageshow" for "https://ciencia.iscte-iul.pt/authors/vitor-manuel-januario-lopes-pegas/publications?view_mode=classic_view&redirect=false"
+1517591225218	geckodriver	INFO	geckodriver 0.19.1
+1517591225227	geckodriver	INFO	Listening on 127.0.0.1:61904
+1517591228275	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ANDRAM~1\\AppData\\Local\\Temp\\rust_mozprofile.nyCMrXYxyftt"
+1517591229079	Marionette	INFO	Enabled via --marionette
+1517591230463	Marionette	INFO	Listening on port 61971
+1517591231397	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\André Amândio\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 1844, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 1844, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\André Amândio\AppData\Local\openvr\openvrpaths.vrpath
+[Child 5460, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\André Amândio\AppData\Local\openvr\openvrpaths.vrpath
+[Child 13328, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13328, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\André Amândio\AppData\Local\openvr\openvrpaths.vrpath
+[Child 15448, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15448, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\André Amândio\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 10256, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1517591236600	geckodriver	INFO	geckodriver 0.19.1
+1517591236609	geckodriver	INFO	Listening on 127.0.0.1:62120
+1517591264406	geckodriver	INFO	geckodriver 0.19.1
+1517591264413	geckodriver	INFO	Listening on 127.0.0.1:62445
+1517591267458	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ANDRAM~1\\AppData\\Local\\Temp\\rust_mozprofile.KCQyZxc7uehv"
+1517591268210	Marionette	INFO	Enabled via --marionette
+1517591269373	Marionette	INFO	Listening on port 62490
+1517591269485	Marionette	WARN	TLS certificate errors will be ignored for this session
+1517591274487	geckodriver	INFO	geckodriver 0.19.1
+1517591274493	geckodriver	INFO	Listening on 127.0.0.1:62610
+1517591277539	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ANDRAM~1\\AppData\\Local\\Temp\\rust_mozprofile.GsWK6MzoP0Em"
+1517591278252	Marionette	INFO	Enabled via --marionette
+1517591279293	Marionette	INFO	Listening on port 62653
+Unable to read VR Path Registry from C:\Users\André Amândio\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 14788, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\André Amândio\AppData\Local\openvr\openvrpaths.vrpath
+[Child 4128, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\André Amândio\AppData\Local\openvr\openvrpaths.vrpath
+[Child 1300, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1300, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 14788, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\André Amândio\AppData\Local\openvr\openvrpaths.vrpath
+[Child 10356, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\André Amândio\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 13928, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1517591373751	geckodriver	INFO	geckodriver 0.19.1
+1517591373759	geckodriver	INFO	Listening on 127.0.0.1:63834
+1517591376802	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ANDRAM~1\\AppData\\Local\\Temp\\rust_mozprofile.H8fwe3LzZsiG"
+1517591377366	Marionette	INFO	Enabled via --marionette
+1517591378449	Marionette	INFO	Listening on port 63888
+1517591378816	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\André Amândio\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: https://ciencia.iscte-iul.pt/authors/ricardo-daniel-santos-faro-marques-ribeiro/publications, line 460: ReferenceError: $ is not defined
+JavaScript error: https://ciencia.iscte-iul.pt/authors/ricardo-daniel-santos-faro-marques-ribeiro/publications, line 769: ReferenceError: $ is not defined
+JavaScript error: https://ciencia.iscte-iul.pt/assets/js/jquery.autocomplete.min.js, line 8: ReferenceError: jQuery is not defined
+JavaScript error: https://ciencia.iscte-iul.pt/assets/js/jquery.sortElements.js, line 25: ReferenceError: jQuery is not defined
+JavaScript error: https://ciencia.iscte-iul.pt/assets/js/sortable.js, line 1: ReferenceError: $ is not defined
+JavaScript error: https://ciencia.iscte-iul.pt/assets/js/bootstrap.min.js, line 6: Error: Bootstrap's JavaScript requires jQuery
+JavaScript error: https://ciencia.iscte-iul.pt/assets/js/bootstrap-datetimepicker.min.js, line 1: ReferenceError: jQuery is not defined
+JavaScript error: https://ciencia.iscte-iul.pt/assets/js/bootstrap-toggle.min.js, line 8: ReferenceError: jQuery is not defined
+JavaScript error: https://ciencia.iscte-iul.pt/authors/ricardo-daniel-santos-faro-marques-ribeiro/publications, line 881: ReferenceError: $ is not defined
+JavaScript error: https://ciencia.iscte-iul.pt/assets/js/main.min.js, line 1: ReferenceError: $ is not defined
+JavaScript error: https://ciencia.iscte-iul.pt/authors/ricardo-daniel-santos-faro-marques-ribeiro/publications, line 933: ReferenceError: $ is not defined
+1517591383411	geckodriver	INFO	geckodriver 0.19.1
+1517591383418	geckodriver	INFO	Listening on 127.0.0.1:64001
+1517591386464	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ANDRAM~1\\AppData\\Local\\Temp\\rust_mozprofile.X2JxTSmMsshO"
+1517591387082	Marionette	INFO	Enabled via --marionette
+1517591388223	Marionette	INFO	Listening on port 64032
+1517591388488	Marionette	WARN	TLS certificate errors will be ignored for this session
+1517591393185	geckodriver	INFO	geckodriver 0.19.1
+1517591393192	geckodriver	INFO	Listening on 127.0.0.1:64168
+1517591396238	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ANDRAM~1\\AppData\\Local\\Temp\\rust_mozprofile.lyvbyH1y7kLh"
+1517591396821	Marionette	INFO	Enabled via --marionette
+1517591397915	Marionette	INFO	Listening on port 64199
+1517591398251	Marionette	WARN	TLS certificate errors will be ignored for this session
+1517591402381	geckodriver	INFO	geckodriver 0.19.1
+1517591402388	geckodriver	INFO	Listening on 127.0.0.1:64309
+1517591405432	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ANDRAM~1\\AppData\\Local\\Temp\\rust_mozprofile.SkyD0CclzBqb"
+1517591405986	Marionette	INFO	Enabled via --marionette
+1517591407059	Marionette	INFO	Listening on port 64363
+1517591407445	Marionette	WARN	TLS certificate errors will be ignored for this session
+1517591409565	geckodriver	INFO	geckodriver 0.19.1
+1517591409572	geckodriver	INFO	Listening on 127.0.0.1:64445
+1517591412618	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ANDRAM~1\\AppData\\Local\\Temp\\rust_mozprofile.6nhmYE7wZFhT"
+1517591413196	Marionette	INFO	Enabled via --marionette
+1517591414304	Marionette	INFO	Listening on port 64490
+1517591414630	Marionette	WARN	TLS certificate errors will be ignored for this session
+1517591421445	geckodriver	INFO	geckodriver 0.19.1
+1517591421452	geckodriver	INFO	Listening on 127.0.0.1:64644
+1517591424496	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ANDRAM~1\\AppData\\Local\\Temp\\rust_mozprofile.wglucaXX0nwI"
+1517591425053	Marionette	INFO	Enabled via --marionette
+1517591426197	Marionette	INFO	Listening on port 64675
+1517591426511	Marionette	WARN	TLS certificate errors will be ignored for this session
+1517591428932	geckodriver	INFO	geckodriver 0.19.1
+1517591428939	geckodriver	INFO	Listening on 127.0.0.1:64782
+1517591431984	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ANDRAM~1\\AppData\\Local\\Temp\\rust_mozprofile.8bpS4lpjyYbR"
+1517591432574	Marionette	INFO	Enabled via --marionette
+1517591433727	Marionette	INFO	Listening on port 64815
+1517591434000	Marionette	WARN	TLS certificate errors will be ignored for this session
+1517591438821	geckodriver	INFO	geckodriver 0.19.1
+1517591438829	geckodriver	INFO	Listening on 127.0.0.1:64936
+1517591441872	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ANDRAM~1\\AppData\\Local\\Temp\\rust_mozprofile.HWE7CFVVhrvk"
+1517591442613	Marionette	INFO	Enabled via --marionette
+1517591443628	Marionette	INFO	Listening on port 64999
+1517591443888	Marionette	WARN	TLS certificate errors will be ignored for this session
+1517591448929	geckodriver	INFO	geckodriver 0.19.1
+1517591448937	geckodriver	INFO	Listening on 127.0.0.1:65133
+1517591451979	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ANDRAM~1\\AppData\\Local\\Temp\\rust_mozprofile.oI3cEERhnuC5"
+1517591452713	Marionette	INFO	Enabled via --marionette
+1517591453781	Marionette	INFO	Listening on port 65165
+1517591453992	Marionette	WARN	TLS certificate errors will be ignored for this session
+1517591460364	geckodriver	INFO	geckodriver 0.19.1
+1517591460371	geckodriver	INFO	Listening on 127.0.0.1:65300
+1517591464094	geckodriver	INFO	geckodriver 0.19.1
+1517591464101	geckodriver	INFO	Listening on 127.0.0.1:65356
